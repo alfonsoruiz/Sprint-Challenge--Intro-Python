@@ -45,7 +45,7 @@ def cityreader(cities=[]):
             lon = line[4]
 
             # Create city instance and append to cities list
-            cities.append(City(name, lat, lon))
+            cities.append(City(name, float(lat), float(lon)))
 
     return cities
 
